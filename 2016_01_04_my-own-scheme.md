@@ -21,9 +21,13 @@
 ### 表达式定义
 为了简单起见，我们的语法规则不会太复杂，具体有下面几点：
 
-1. 数据类型：数字、字符串、bool
-2. 数据结构：pair、list、function
-3. 关键字：`define`、`cons`、`car`、`cdr`、`lambda`、`eq?`、`empty?`、`true`、`false`、`if`、`cond`、`nil`
+1. 数据类型：`number`、`string`、`bool`、`pair`、`list`、`function`
+2. 内置函数：
+    - `bool`: `and`、 `or`、 `not`
+    - `number`: `+`、 `-`、 `*`、 `/`、 `>`、 `<`、 `=`
+    - `pair/list`: `cons`、 `car`、 `cdr`、 `list`、 `null?`
+3. 关键字：`if`, `lambda`, `def`
+4. 字面量：`true`, `false`, `nil`
 
 上面的数据结构和关键字的含义与 MIT Scheme 保持一致，这里不再赘述。
 
@@ -75,11 +79,11 @@ nil
 1
 >> (cdr (list 1 2)) #  aware of the difference between this and (cdr (cons 1 2))
 (2)
->> (empty? (cdr (list 1 2)))
+>> (null? (cdr (list 1 2)))
 false
->> (empty? (cdr (cdr (list 1 2))))
+>> (null? (cdr (cdr (list 1 2))))
 true
->> (empty? nil)
+>> (null? nil)
 true
 >> (cons 1 nil)
 (1)
