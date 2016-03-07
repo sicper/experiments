@@ -1,24 +1,50 @@
 # tiny-scheme
 
-just a toy scheme written by clojure!
+no description
 
 ## Installation
 
-nil
+
+    $ lein uberjar
 
 ## Usage
 
 
-    $ java -jar tiny-scheme-0.1.0-standalone.jar
+    $ java -jar target/uberjar/tiny-scheme-0.1.0-standalone.jar
 
+## Examples
+
+    ;; numeric operation
+    tiny-scheme.core >> (+ 1 2)
+    3
+    tiny-scheme.core >> (- 2 2)
+    0
+    tiny-scheme.core >> (* 2 3 4)
+    24
+    tiny-scheme.core >> (mod 3 4)
+    3
+
+    ;; variable definition
+    tiny-scheme.core >> (define x 5)
+    ok
+    tiny-scheme.core >> x
+    5
+
+    ;; function 
+
+    ;; pair
+
+    ;; list
+
+    ;; if
+
+    ;; lambda
+
+    ;; bool
 
 ### Bugs
 
-
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+...
 
 ## License
 
