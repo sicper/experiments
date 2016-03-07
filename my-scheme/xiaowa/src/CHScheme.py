@@ -1,16 +1,11 @@
 #!/usr/bin/env python
-#-*- encoding: utf-8 -*-
-'''
-Created on Jan 6, 2016
+# -*- encoding: utf-8 -*-
 
-@author: jerry
-'''
 
 from interpreter import Interpreter
-import readline, os
-
+import readline
 readline.parse_and_bind('tab: complete')
-histfile = os.path.join(os.environ['HOME'], '.pythonhistory')
+
 
 def interact():
     itp = Interpreter()

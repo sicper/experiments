@@ -4,9 +4,11 @@
 # CHScheme
 CHScheme is short for ChenHao Scheme.
 ## 运行
-```git clone https://github.com/sicper/experiments.git
-   cd experiments/my-scheme/xiaowa/src
-   python ./CHScheme.py```
+```shell 
+git clone https://github.com/sicper/experiments.git
+cd experiments/my-scheme/xiaowa/src
+python ./CHScheme.py
+```
 ## 语言边界
 CHScheme 可以运行四则运算、实现简单逻辑分支、函数定义等功能。
 具体语法定义见2016_01_04_my-own-scheme.md

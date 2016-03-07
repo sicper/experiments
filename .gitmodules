@@ -1,3 +1,6 @@
 [submodule "my-scheme/xigua"]
 	path = my-scheme/xigua
 	url = git@github.com:jiacai2050/JCScheme.git
+[submodule "my-scheme/ng/tiny-scheme"]
+	path = my-scheme/ng/tiny-scheme
+	url = git@github.com:ng-wei/tiny-scheme.git
