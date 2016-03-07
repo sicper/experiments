@@ -1,6 +1,10 @@
 # tiny-scheme
 
-no description
+no description    
+
+## Design:
+
+![design](doc/tiny-scheme.png)
 
 ## Installation
 
