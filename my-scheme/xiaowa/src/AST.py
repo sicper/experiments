@@ -1,4 +1,5 @@
 #-*- encoding: utf-8 -*-
+<<<<<<< HEAD
 
 class AST:
     def __init__(self, elements):
@@ -14,11 +15,30 @@ class AST:
         self.elements = ast.elements
         self.cmd = ast.cmd
         self.args = ast.args
+=======
+'''
+Created on Jan 7, 2016
+
+@author: jerry
+'''
+
+class AST:
+    def __init__(self, elements):
+        pass
+        # if len(elements) == 0:
+        #     print 'not enough eles!'
+        self.cmd, self.args = '', []
+        self.elements = elements
+        if len (elements) > 0:
+            self.cmd = elements[0]
+            self.args = elements[1:]
+>>>>>>> 63c794f4207f12f3ff2da08852d4cdec6092784b
 
     def __repr__(self):
         show = '(cmd:%s\targs:[%s])' % (self.cmd, ','.join(str(item) for item in self.args))
         return show
 
+<<<<<<< HEAD
     def get_cmd(self):
         if len(self.elements) > 0:
             return self.elements[0]
@@ -43,5 +63,13 @@ class AST:
 
 
 
+=======
+
+    def get_cmd(self):
+        return self.cmd
+
+    def get_args(self):
+        return self.args
+>>>>>>> 63c794f4207f12f3ff2da08852d4cdec6092784b
 
 

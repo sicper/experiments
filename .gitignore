@@ -9,4 +9,7 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+<<<<<<< HEAD
 .idea/
+=======
+>>>>>>> 63c794f4207f12f3ff2da08852d4cdec6092784b
